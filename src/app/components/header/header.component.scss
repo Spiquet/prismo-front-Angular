@@ -1,0 +1,57 @@
+#navbar-container {
+	height: 4em;
+	background-color:  rgb(0,206,209);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 6px 6px #c8c8c8;
+}
+
+.links {
+  display: flex;
+float: right;}
+
+li {
+	display: inline;
+  padding: 1em;
+
+
+}
+
+.nav_a {
+  font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0em;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: rgb(255,255,255);
+}
+
+.nav_a:hover {
+	text-shadow: 1px 1px 1px black;
+}
+
+.router-link-active {
+	text-shadow: 1px 1px 1px black;
+}
+
+/* logo */
+
+.logo-prismo{
+text-align: start;
+align-items: center;
+margin-left: 10px;
+}
+
+img{
+  height: 30%;
+  width: 30%;
+  align-items: center;
+}
+
+
+

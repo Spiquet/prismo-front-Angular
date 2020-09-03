@@ -1,0 +1,43 @@
+<div *ngIf="MemberAPI" class="row">
+  <div class="col s12 m8 offset-m2">
+    <h2 class="header center">{{ MemberAPI.firstname }}</h2>
+    <div class="card horizontal hoverable">
+      <div class="card-image">
+        <img class="avatar" src="../../../assets/images/avatars/{{MemberAPI.avatar}}" alt="avatar">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td><strong>{{MemberAPI.firstname}}</strong></td>
+
+              </tr>
+              <tr>
+
+                <td><strong>{{MemberAPI.lastname}}</strong></td>
+              </tr>
+              <tr>
+                <td><strong>{{MemberAPI.function}}</strong></td>
+              </tr>
+              <tr>
+                <td><strong>{{MemberAPI.description}}</strong></td>
+
+                <td>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="card-action">
+          <a (click)="goBack()" class="waves-effect waves-light btn">Retour</a>
+
+        </div>
+      </div>
+    </div>
+    </div>
+     </div>
+    <h4 *ngIf='!MemberAPI' class="center">
+      Aucun membre à afficher
+    </h4>
